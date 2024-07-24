@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PPL LAPAS FIX</string>
+    <string name="select">Jenis Kelamin</string>
+    <string name="pilih_antrian">Pilih Jenis Antrian</string>
+    <string name="pesan_pilih">Terdapat dua jenis nomor antrian yang dapat anda lihat</string>
+    <string name="batal">Batal</string>
+
+    <string name="notifikasi_antrian_kunjugan">Saat ini anda tidak memiliki nomor antrian. Silahkan mengirim formulir kunjungan untuk mendapatkan nomor antrian kunjungan</string>
+    <string name="notifikasi_antrian_titipan">Saat ini anda tidak memiliki nomor antrian. Silahkan mengirim formulir titipan untuk mendapatkan nomor antrian titipan</string>
+
+    <string name="antrian_kunjugan_tidak_ditemukan">Nomor Antrian Tidak Ditemukan</string>
+    <string name="terjadi_kesalahan">Terjadi Kesalahan</string>
+
+    <string name="kembali">Kembali</string>
+    <string name="ya">Ya</string>
+    <string name="ok">Oke</string>
+    <string name="batalkan_antrian_kunjungan">Batalkan Antrian Kunjungan</string>
+    <string name="membatalkan_antrian_kunjungan">"Apakah anda yakin ingin membatalkan antrian kunjungan ini? "</string>
+    <string name="tidak">Tidak</string>
+
+    <string name="keluar">Keluar</string>
+    <string name="yakin_keluar">Apakah kamu yakin ingin mengeluarkan akun?</string>
+
+</resources>

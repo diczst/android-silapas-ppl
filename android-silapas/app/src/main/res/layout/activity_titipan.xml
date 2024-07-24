@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.formulirtitipan.TitipanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_back_disini"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/kembali"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulir Titipan"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/_24ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan isi data untuk mendapatkan layanan titipan barang"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            android:hint="Nama Warga Binaan"
+            app:startIconDrawable="@drawable/userr"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <AutoCompleteTextView
+                android:id="@+id/nama_wbp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            app:startIconDrawable="@drawable/ic_baseline_gpp_maybe_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_kasus"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Perkara / Kasus"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            android:hint="Hubungan keluarga dengan WBP"
+            app:startIconDrawable="@drawable/ic_relation"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_hubungan"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_height="wrap_content"
+                android:inputType= "none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primary"
+                android:background="@color/white"
+                app:hintTextColor="@color/hijau"
+                android:layout_weight="1"
+                app:startIconDrawable="@drawable/ic_baseline_money_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_titipanuang"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titipan Uang"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primary"
+                android:background="@color/white"
+                app:hintTextColor="@color/hijau"
+                android:layout_marginStart="8dp"
+                app:startIconDrawable="@drawable/ic_baseline_card_giftcard_24"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_titipanbarang"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titipan Barang"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            app:startIconDrawable="@drawable/ic_baseline_format_list_numbered_rtl_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nokamar"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No Blok / Kamar"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Pilih tanggal"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            app:endIconDrawable="@android:color/transparent"
+            app:startIconDrawable="@drawable/ic_baseline_calendar_month_24">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tv_proses_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proses Antrian"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:background="@color/primary"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginHorizontal="16dp"
+            android:textColor="@color/white"/>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

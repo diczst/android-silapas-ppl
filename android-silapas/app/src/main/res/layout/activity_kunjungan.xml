@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.formulirkunjungan.KunjunganActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_back_disini"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/kembali"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulir Kunjungan"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/_24ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan isi data untuk mendapatkan layanan kunjungan WBP (Warga Binaan Pemasyarakatan)"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            android:hint="Nama Warga Binaan"
+            app:startIconDrawable="@drawable/userr"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <AutoCompleteTextView
+                android:id="@+id/nama_wbp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            android:hint="Jenis Pidana"
+            app:startIconDrawable="@drawable/ic_baseline_list_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_jenis_pidana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType= "none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            android:hint="Hubungan keluarga dengan WBP"
+            app:startIconDrawable="@drawable/ic_relation"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_hubungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType= "none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Pilih tanggal berkunjung"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            app:endIconDrawable="@android:color/transparent"
+            app:startIconDrawable="@drawable/ic_baseline_calendar_month_24">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="none"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:boxStrokeColor="@color/primary"
+            android:background="@color/white"
+            app:hintTextColor="@color/hijau"
+            app:startIconDrawable="@drawable/userr">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_keterangan"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Keterangan Kunjungan"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_white">
+            <ImageView
+                android:id="@+id/img_bukti_vaksin"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ktp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Bukti Vaksin Boster"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_proses_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proses Antrian"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@color/primary"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginHorizontal="16dp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

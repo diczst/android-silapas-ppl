@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        // ++ add (2)
+        maven { url "https://jitpack.io" }
+        // not recommended to use but needed for midorks downloader
+       // jcenter()
+    }
+}
+rootProject.name = "PPL LAPAS FIX"
+include ':app'
